@@ -11,11 +11,22 @@ namespace MovieNight.Tests
         [Fact]
         public void Test_MovieId()
         {
-            var expected = typeof(Guid);
+            var expected = typeof(Enum);
             var sut = new Movie();
-            var actual = sut.Id;
+            var actual = sut.Actors;
 
             Assert.True(expected == actual.GetType());
+        }
+
+        [Fact]
+        public void Test_MovieActors()
+        {
+            var expected = 1;
+            var sut = new Movie();
+            var actual = sut.Actors;
+
+            Assert.True(typeof(List<Person>) == actual.GetType());
+            Assert.True(expected <= actual.Count);
         }
     }
 }

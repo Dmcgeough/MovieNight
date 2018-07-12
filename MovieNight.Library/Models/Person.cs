@@ -1,7 +1,5 @@
-﻿using MovieNight.Library.Abstracts;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
+using MovieNight.Library.Abstracts;
 
 namespace MovieNight.Library.Models
 {
@@ -12,6 +10,7 @@ namespace MovieNight.Library.Models
             get;
             set;
         }
+
         public Person()
         {
             History = new History();

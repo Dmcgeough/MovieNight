@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace MovieNight.Tests
+namespace MovieNight.Test
 {
     public class PersonTest
     {
@@ -17,6 +17,7 @@ namespace MovieNight.Tests
 
             Assert.True(expected == actual.GetType());
         }
+
         [Fact]
         public void Test_PersonHistory()
         {

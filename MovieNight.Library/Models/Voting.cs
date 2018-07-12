@@ -1,14 +1,12 @@
-﻿using MovieNight.Library.Abstracts;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
+using MovieNight.Library.Abstracts;
 
 namespace MovieNight.Library.Models
 {
     public class Voting : AModel
     {
         public Voting()
-            {
-            }
+        {
+        }
     }
 }

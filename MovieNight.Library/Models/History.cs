@@ -1,7 +1,6 @@
-﻿using MovieNight.Library.Abstracts;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using MovieNight.Library.Abstracts;
 
 namespace MovieNight.Library.Models
 {
@@ -12,13 +11,13 @@ namespace MovieNight.Library.Models
             get;
             set;
         }
+
         public History()
         {
-            Movies = new List<Movie>();
-            {
-                new Movie()
-            };
-            Movies.Add(new Movie());
+            Movies = new List<Movie>()
+      {
+        new Movie()
+      };
         }
     }
 }

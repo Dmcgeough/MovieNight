@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
+using System;
 namespace MovieNight.Library.Abstracts
 {
     public abstract class APerson : AModel
     {
+        public APerson()
+        {
+        }
     }
 }

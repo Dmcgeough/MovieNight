@@ -1,10 +1,9 @@
-﻿using MovieNight.Library.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using MovieNight.Library.Models;
 using Xunit;
 
-namespace MovieNight.Tests
+namespace MovieNight.Test
 {
     public class HistoryTest
     {
@@ -19,7 +18,7 @@ namespace MovieNight.Tests
         }
 
         [Fact]
-        public void Test_HistoryMovieList()
+        public void Test_HistoryMovies()
         {
             var expected = 1;
             var sut = new History();

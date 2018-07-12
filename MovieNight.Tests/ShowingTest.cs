@@ -1,10 +1,9 @@
-﻿using MovieNight.Library.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using MovieNight.Library.Models;
 using Xunit;
 
-namespace MovieNight.Tests
+namespace MovieNight.Test
 {
     public class ShowingTest
     {
@@ -16,6 +15,17 @@ namespace MovieNight.Tests
             var actual = sut.Id;
 
             Assert.True(expected == actual.GetType());
+        }
+
+        [Fact]
+        public void Test_ShowingMovies()
+        {
+            var expected = 1;
+            var sut = new Showing();
+            var actual = sut.Movies;
+
+            Assert.True(typeof(List<Movie>) == actual.GetType());
+            Assert.True(expected <= actual.Count);
         }
     }
 }

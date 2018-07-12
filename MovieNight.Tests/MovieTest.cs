@@ -4,16 +4,21 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace MovieNight.Tests
+using System;
+using System.Collections.Generic;
+using MovieNight.Library.Models;
+using Xunit;
+
+namespace MovieNight.Test
 {
     public class MovieTest
     {
         [Fact]
         public void Test_MovieId()
         {
-            var expected = typeof(Enum);
+            var expected = typeof(Guid);
             var sut = new Movie();
-            var actual = sut.Actors;
+            var actual = sut.Id;
 
             Assert.True(expected == actual.GetType());
         }
@@ -25,7 +30,7 @@ namespace MovieNight.Tests
             var sut = new Movie();
             var actual = sut.Actors;
 
-            Assert.True(typeof(List<Person>) == actual.GetType());
+            Assert.True(typeof(List<Actor>) == actual.GetType());
             Assert.True(expected <= actual.Count);
         }
     }

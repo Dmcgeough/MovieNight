@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace MovieNight.Tests
+namespace MovieNight.Test
 {
-    public class VotingTest
+    public class VotingTests
     {
         [Fact]
         public void Test_VotingId()
@@ -16,13 +16,6 @@ namespace MovieNight.Tests
             var actual = sut.Id;
 
             Assert.True(expected == actual.GetType());
-        }
-        [Fact]
-        public void Test_()
-        {
-            var expected =
-            var sut =
-            var actual = 
         }
     }
 }

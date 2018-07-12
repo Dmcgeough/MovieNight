@@ -1,7 +1,6 @@
-﻿using MovieNight.Library.Abstracts;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using MovieNight.Library.Abstracts;
 
 namespace MovieNight.Library.Models
 {
@@ -16,9 +15,9 @@ namespace MovieNight.Library.Models
         public Movie()
         {
             Actors = new List<Actor>()
-            {
-                new Actor()
-            };
+      {
+        new Actor()
+      };
         }
     }
 }

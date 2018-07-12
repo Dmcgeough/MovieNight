@@ -1,10 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using MovieNight.Library.Abstracts;
 
 namespace MovieNight.Library.Models
 {
-    class Actor : APerson
+    public class Actor : APerson
     {
+        public Actor()
+        {
+        }
     }
 }

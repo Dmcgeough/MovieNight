@@ -1,12 +1,11 @@
-﻿using MovieNight.Library.Models;
+﻿
 using System;
-using System.Collections.Generic;
-using System.Text;
+using MovieNight.Library.Models;
 using Xunit;
 
 namespace MovieNight.Test
 {
-    public class VotingTests
+    public class VotingTest
     {
         [Fact]
         public void Test_VotingId()

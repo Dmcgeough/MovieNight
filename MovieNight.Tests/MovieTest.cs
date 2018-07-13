@@ -1,15 +1,9 @@
-﻿using MovieNight.Library.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Xunit;
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using MovieNight.Library.Models;
 using Xunit;
 
-namespace MovieNight.Test
+namespace MovieNight.Tests
 {
     public class MovieTest
     {

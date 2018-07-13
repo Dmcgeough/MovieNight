@@ -1,29 +1,31 @@
-﻿using MovieNight.Library.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using MovieNight.Library.Models;
 using Xunit;
 
 namespace MovieNight.Test
 {
-    public class PersonTest
+    public class MovieTest
     {
         [Fact]
-        public void Test_PersonId()
+        public void Test_MovieId()
         {
             var expected = typeof(Guid);
-            var sut = new Person();
+            var sut = new Movie();
             var actual = sut.Id;
 
             Assert.True(expected == actual.GetType());
         }
 
         [Fact]
-        public void Test_PersonHistory()
+        public void Test_MovieActors()
         {
-            var sut = new Person();
+            var expected = 1;
+            var sut = new Movie();
+            var actual = sut.Actors;
 
-            Assert.NotNull(sut.History);
+            Assert.True(typeof(List<Actor>) == actual.GetType());
+            Assert.True(expected <= actual.Count);
         }
     }
 }
